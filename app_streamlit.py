@@ -16,7 +16,7 @@ st.title("🔷 Calculadora de Gasificadores Atmosféricos (GNL → GNG)")
 st.markdown("""
 Ajusta los parámetros geométricos, ambientales y de disposición de módulos para
 estimar la **capacidad de vaporización** y el **footprint**. Basado en el modelo
-FYNLQ‑2000‑10Q y escalado validado en conversaciones previas.
+referencia y escalado validado en conversaciones previas.
 """)
 
 # --------------------------- Sidebar --------------------------------------

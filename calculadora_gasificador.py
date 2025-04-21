@@ -7,7 +7,7 @@
 # ● Basado en FYNLQ‑2000‑10Q y validaciones del chat.
 # ---------------------------------------------------------------------------
 from __future__ import annotations
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from math import pi, sqrt
 
 # -------------------- 1. Propiedades físicas simplificadas ------------------
@@ -83,7 +83,8 @@ class Gasifier:
     geom: FinTubeGeometry
     module: ModuleConfig
     tube_length_mm: float = 4600
-    ambient: AmbientConditions = AmbientConditions()
+
+    ambient: AmbientConditions = field(default_factory=AmbientConditions)
 
     def capacity(self, mode="steady") -> float:
         """Devuelve capacidad Nm³/h para condiciones dadas.
